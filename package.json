@@ -1,0 +1,17 @@
+{
+  "name": "sponsors-data",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "build": "sponsorkit"
+  },
+  "devDependencies": {
+    "sponsorkit": "^17.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}
