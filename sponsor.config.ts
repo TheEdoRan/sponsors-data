@@ -13,7 +13,6 @@ export default defineConfig({
     },
     {
       title: "Supporters",
-      monthlyDollars: 5,
       preset: tierPresets.small,
     },
     {
