@@ -12,24 +12,31 @@ export default defineConfig({
       preset: tierPresets.xs,
     },
     {
+      title: "Supporters",
+      monthlyDollars: 5,
+      preset: tierPresets.small,
+    },
+    {
       title: "Backers",
+      monthlyDollars: 10,
       preset: tierPresets.base,
     },
     {
-      title: "Sponsors",
-      monthlyDollars: 10,
+      title: "Enthusiasts (Bronze)",
+      monthlyDollars: 25,
       preset: tierPresets.medium,
     },
     {
-      title: "Silver Sponsors",
-      monthlyDollars: 50,
+      title: "Advocates (Silver)",
+      monthlyDollars: 100,
       preset: tierPresets.large,
     },
     {
-      title: "Gold Sponsors",
-      monthlyDollars: 100,
+      title: "Patrons (Gold)",
+      monthlyDollars: 250,
       preset: tierPresets.xl,
     },
   ],
+  outputDir: ".",
   formats: ["svg"],
 });
