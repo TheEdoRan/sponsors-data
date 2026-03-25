@@ -18,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 24
           cache: pnpm
 
       - name: Install dependencies
@@ -28,6 +28,9 @@ jobs:
         run: pnpm run build
         env:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+
+      - name: Keep workflow alive
+        uses: gautamkrishnar/keepalive-workflow@v2
 
       - name: Commit sponsors SVG
         uses: EndBug/add-and-commit@v9
